@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-cream text-neutral-800 antialiased; }
+.btn { @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition; }
+.btn-primary { @apply bg-navy text-white hover:bg-navy/90; }
+.btn-wa { @apply bg-orange text-white hover:bg-orange/90; }
+.btn-outline { @apply border border-navy text-navy hover:bg-navy hover:text-white; }
+.section { @apply mx-auto max-w-6xl px-4 py-14; }
+.h2 { @apply font-serif text-3xl text-navy md:text-4xl; }
+.input { @apply w-full rounded-lg border border-neutral-300 px-3 py-2 text-sm focus:border-navy focus:outline-none; }
+.label { @apply mb-1 block text-xs font-semibold uppercase tracking-wide text-neutral-500; }

@@ -1,0 +1,62 @@
+{
+  "site": {
+    "name": "Bouchra Unique Interior",
+    "tagline": "Showroom de déco d'intérieur et créatrice d'ambiance parfumée",
+    "city": "Liberté 6, Dakar (2 voies Liberté 6, après l'hôpital SAMU)",
+    "whatsapp": "221775447668",
+    "email": "bouchrahomeinteriors@gmail.com",
+    "instagram": "https://www.instagram.com/bouchra_unique_interior/",
+    "facebook": "https://www.facebook.com/profile.php?id=61560014461653",
+    "tiktok": "https://www.tiktok.com/@bouchraunique",
+    "hours": "Lun–Sam, 9h–19h (à confirmer sur WhatsApp)"
+  },
+  "home": {
+    "steps": [
+      ["1. Choisissez", "Parcourez les gammes : encensoirs, diffuseurs, tableaux, luminaires."],
+      ["2. Personnalisez", "Ajoutez un prénom ou un message gravé en doré, gratuitement."],
+      ["3. Commandez", "Validez en 1 minute, confirmez sur WhatsApp."],
+      ["4. Recevez", "Livraison à Dakar, paiement à la livraison."]
+    ],
+    "why": [
+      ["Personnalisation gratuite", "Prénom ou message sur votre encensoir."],
+      ["Showroom à Dakar", "Venez voir et sentir les produits à Liberté 6."],
+      ["Sélection soignée", "Des articles choisis avec soin et amour."],
+      ["Ambiance parfumée", "Encensoirs, diffuseurs, arômes et bougies."],
+      ["Cadeaux et événements", "Mariages, Tabaski, Korité, fête des mères."],
+      ["Réponse rapide", "Un seul WhatsApp pour tout."]
+    ],
+    "faq": [
+      ["Livrez-vous partout à Dakar ?", "Oui, sur demande. Précisez votre quartier à la commande."],
+      ["Comment payer ?", "Paiement à la livraison. Wave et Orange Money pourront s'ajouter."],
+      ["La personnalisation est-elle payante ?", "Non, elle est gratuite sur les produits marqués « Personnalisable »."],
+      ["Puis-je voir les produits ?", "Oui, au showroom : Liberté 6, Dakar."]
+    ]
+  },
+  "personnalisation": {
+    "title": "Personnalisation gratuite",
+    "intro": "Choisissez un encensoir, envoyez-nous le prénom ou le message : nous le gravons à la main en doré.",
+    "steps": [
+      "Choisissez un produit marqué « Personnalisable » dans le catalogue.",
+      "Indiquez le texte à graver dans le formulaire de commande.",
+      "Nous confirmons le délai et l'aperçu sur WhatsApp."
+    ]
+  },
+  "showroom": {
+    "title": "Notre showroom",
+    "hours": "Lun–Sam, 9h–19h (à confirmer sur WhatsApp)",
+    "address_query": "Bouchra Unique Interior Liberté 6 Dakar"
+  },
+  "reviews": [],
+  "products": [
+    { "slug": "encensoir-nacre-dor", "name": "Encensoir Nacre d'Or", "category": "Encensoirs", "collection": "Nacre d'Or", "price": null, "image": null, "description": "Encensoir en céramique blanche et dorée sur pied doré.", "customizable": true, "inStock": true, "published": true },
+    { "slug": "encensoir-noir-argent", "name": "Encensoir Noir et argent", "category": "Encensoirs", "collection": "Noir et argent", "price": null, "image": null, "description": "Encensoir noir mat, finitions argentées.", "customizable": true, "inStock": true, "published": true },
+    { "slug": "encensoir-orange-noir", "name": "Encensoir Orange noir", "category": "Encensoirs", "collection": "Orange noir", "price": null, "image": null, "description": "Encensoir orange sur pied filaire doré.", "customizable": true, "inStock": true, "published": true },
+    { "slug": "encensoir-coeur-personnalise", "name": "Encensoir cœur personnalisé", "category": "Encensoirs", "collection": "Personnalisation", "price": null, "image": null, "description": "Encensoir blanc en forme de cœur avec prénom gravé en doré.", "customizable": true, "inStock": true, "published": true },
+    { "slug": "diffuseur-arome-ambre", "name": "Diffuseur d'arôme Ambre", "category": "Diffuseurs", "collection": "Ambre", "price": null, "image": null, "description": "Diffuseur d'arôme en céramique, senteur ambre.", "customizable": false, "inStock": true, "published": true },
+    { "slug": "bougie-parfumee-vanille", "name": "Bougie parfumée Vanille", "category": "Bougies", "collection": "Vanille", "price": null, "image": null, "description": "Bougie artisanale parfumée à la vanille.", "customizable": false, "inStock": true, "published": true },
+    { "slug": "tableau-calligraphie-doree", "name": "Tableau calligraphie dorée", "category": "Tableaux", "collection": "Calligraphie", "price": null, "image": null, "description": "Tableau de calligraphie islamique doré.", "customizable": false, "inStock": true, "published": true },
+    { "slug": "luminaire-suspendu-dore", "name": "Luminaire suspendu doré", "category": "Luminaires", "collection": "Doré", "price": null, "image": null, "description": "Luminaire suspendu aux finitions dorées.", "customizable": false, "inStock": true, "published": true },
+    { "slug": "porte-verres-suspendu", "name": "Porte-verres suspendu", "category": "Accessoires", "collection": "Accessoires", "price": null, "image": null, "description": "Porte-verres suspendu, style doré.", "customizable": false, "inStock": true, "published": true },
+    { "slug": "pot-de-fleur-dore", "name": "Pot de fleur doré", "category": "Accessoires", "collection": "Accessoires", "price": 30000, "image": null, "description": "Pot de fleur doré, pièce décorative.", "customizable": false, "inStock": true, "published": true }
+  ]
+}

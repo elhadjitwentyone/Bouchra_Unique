@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SITE, waLink } from "@/lib/content";
+import { getSiteConfig, waLink } from "@/lib/content";
 
 const links = [
   { href: "/catalogue", label: "Catalogue" },
@@ -7,7 +7,8 @@ const links = [
   { href: "/showroom", label: "Showroom" },
 ];
 
-export default function Header() {
+export default async function Header() {
+  const SITE = await getSiteConfig();
   return (
     <header className="sticky top-0 z-40 border-b border-neutral-200 bg-cream/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
@@ -19,7 +20,7 @@ export default function Header() {
             <Link key={l.href} href={l.href} className="text-neutral-700 hover:text-navy">{l.label}</Link>
           ))}
         </nav>
-        <a href={waLink(`Bonjour ${SITE.name}, je souhaite des informations.`)} className="btn btn-wa !px-4 !py-2">
+        <a href={waLink(SITE.whatsapp, `Bonjour ${SITE.name}, je souhaite des informations.`)} className="btn btn-wa !px-4 !py-2">
           WhatsApp
         </a>
       </div>

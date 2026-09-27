@@ -1,20 +1,31 @@
 import raw from "@/data/content.json";
 import type { SiteContent } from "@/data/types";
+import { readContentJson, isConfigured } from "@/lib/github";
 
-const content = raw as unknown as SiteContent;
+const fallback = raw as unknown as SiteContent;
 
-export function getSiteConfig() { return content.site; }
-export function getHomeContent() { return content.home; }
-export function getPersonnalisationContent() { return content.personnalisation; }
-export function getShowroomContent() { return content.showroom; }
-export function getReviews() { return content.reviews ?? []; }
-export function getProducts() { return content.products.filter((p) => p.published !== false); }
-export function getProduct(slug: string) { return content.products.find((p) => p.slug === slug) ?? null; }
+// Contenu relu en direct depuis GitHub à chaque requête (aucun cache) : une sauvegarde
+// dans /admin apparaît sur le site immédiatement, sans build ni redéploiement Vercel.
+// Si GitHub n'est pas configuré ou injoignable, on retombe sur data/content.json (build).
+async function getContent(): Promise<SiteContent> {
+  if (!isConfigured()) return fallback;
+  try {
+    return (await readContentJson()) as SiteContent;
+  } catch {
+    return fallback;
+  }
+}
 
-export const SITE = content.site;
+export async function getSiteConfig() { return (await getContent()).site; }
+export async function getHomeContent() { return (await getContent()).home; }
+export async function getPersonnalisationContent() { return (await getContent()).personnalisation; }
+export async function getShowroomContent() { return (await getContent()).showroom; }
+export async function getReviews() { return (await getContent()).reviews ?? []; }
+export async function getProducts() { return (await getContent()).products.filter((p) => p.published !== false); }
+export async function getProduct(slug: string) { return (await getContent()).products.find((p) => p.slug === slug) ?? null; }
 
-export const waLink = (text: string) =>
-  `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(text)}`;
+export const waLink = (whatsapp: string, text: string) =>
+  `https://wa.me/${whatsapp}?text=${encodeURIComponent(text)}`;
 
 export const fcfa = (n: number | null) =>
   n == null ? "Prix sur WhatsApp" : new Intl.NumberFormat("fr-FR").format(n) + " FCFA";

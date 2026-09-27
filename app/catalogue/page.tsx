@@ -5,9 +5,10 @@ import { getProducts } from "@/lib/content";
 import { CATEGORIES } from "@/data/types";
 
 export const metadata: Metadata = { title: "Catalogue" };
+export const dynamic = "force-dynamic";
 
-export default function Catalogue({ searchParams }: { searchParams: { cat?: string } }) {
-  const all = getProducts();
+export default async function Catalogue({ searchParams }: { searchParams: { cat?: string } }) {
+  const all = await getProducts();
   const cat = searchParams.cat;
   const products = cat ? all.filter((p) => p.category === cat) : all;
   return (

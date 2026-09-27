@@ -1,11 +1,14 @@
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
-import { getProducts, getHomeContent, getReviews, SITE, waLink } from "@/lib/content";
+import { getProducts, getHomeContent, getReviews, getSiteConfig, waLink } from "@/lib/content";
 
-export default function Home() {
-  const products = getProducts().slice(0, 8);
-  const { steps, why, faq } = getHomeContent();
-  const reviews = getReviews();
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+  const [allProducts, { steps, why, faq }, reviews, SITE] = await Promise.all([
+    getProducts(), getHomeContent(), getReviews(), getSiteConfig(),
+  ]);
+  const products = allProducts.slice(0, 8);
 
   return (
     <div>
@@ -15,7 +18,7 @@ export default function Home() {
           <p className="mx-auto mt-4 max-w-xl text-neutral-600">{SITE.city}</p>
           <div className="mt-6 flex justify-center gap-3">
             <Link href="/catalogue" className="btn btn-primary">Voir le catalogue</Link>
-            <a href={waLink(`Bonjour ${SITE.name}, je souhaite des informations.`)} className="btn btn-wa">Commander sur WhatsApp</a>
+            <a href={waLink(SITE.whatsapp, `Bonjour ${SITE.name}, je souhaite des informations.`)} className="btn btn-wa">Commander sur WhatsApp</a>
           </div>
         </div>
       </section>

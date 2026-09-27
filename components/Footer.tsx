@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { SITE, waLink } from "@/lib/content";
+import { getSiteConfig, waLink } from "@/lib/content";
 
-export default function Footer() {
+export default async function Footer() {
+  const SITE = await getSiteConfig();
   return (
     <footer className="mt-10 bg-navy text-white">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-3">
@@ -24,7 +25,7 @@ export default function Footer() {
             <li><a href={SITE.instagram}>Instagram</a></li>
             <li><a href={SITE.facebook}>Facebook</a></li>
             <li><a href={SITE.tiktok}>TikTok</a></li>
-            <li><a href={waLink("Bonjour !")}>WhatsApp</a></li>
+            <li><a href={waLink(SITE.whatsapp, "Bonjour !")}>WhatsApp</a></li>
           </ul>
         </div>
       </div>

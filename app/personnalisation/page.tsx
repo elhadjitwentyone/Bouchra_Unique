@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getPersonnalisationContent, waLink } from "@/lib/content";
+import { getPersonnalisationContent, getSiteConfig, waLink } from "@/lib/content";
 
 export const metadata: Metadata = { title: "Personnalisation" };
+export const dynamic = "force-dynamic";
 
-export default function Personnalisation() {
-  const c = getPersonnalisationContent();
+export default async function Personnalisation() {
+  const [c, SITE] = await Promise.all([getPersonnalisationContent(), getSiteConfig()]);
   return (
     <div className="section max-w-3xl">
       <h1 className="h2">{c.title}</h1>
@@ -15,7 +16,7 @@ export default function Personnalisation() {
       </ol>
       <div className="mt-8 flex gap-3">
         <Link href="/catalogue?cat=Encensoirs" className="btn btn-primary">Voir les encensoirs</Link>
-        <a href={waLink("Bonjour, je souhaite une personnalisation.")} className="btn btn-wa">Demander sur WhatsApp</a>
+        <a href={waLink(SITE.whatsapp, "Bonjour, je souhaite une personnalisation.")} className="btn btn-wa">Demander sur WhatsApp</a>
       </div>
     </div>
   );

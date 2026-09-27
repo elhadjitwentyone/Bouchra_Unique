@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
-import { SITE, waLink } from "@/lib/content";
+import { waLink } from "@/lib/content";
 
-export default function OrderForm({ product, customizable }: { product: string; customizable: boolean }) {
+export default function OrderForm({
+  product, customizable, whatsapp, siteName,
+}: { product: string; customizable: boolean; whatsapp: string; siteName: string }) {
   const [state, setState] = useState<"idle" | "sending" | "done">("idle");
   const [wa, setWa] = useState("");
 
@@ -15,8 +17,8 @@ export default function OrderForm({ product, customizable }: { product: string; 
     };
     setState("sending");
     await fetch("/api/order", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(order) }).catch(() => null);
-    setWa(waLink(
-      `Bonjour ${SITE.name}, je commande : ${order.qty} x ${product}.` +
+    setWa(waLink(whatsapp,
+      `Bonjour ${siteName}, je commande : ${order.qty} x ${product}.` +
       (order.custom ? ` Personnalisation : ${order.custom}.` : "") +
       ` Nom : ${order.name}. Tél : ${order.phone}. Livraison : ${order.address}. Paiement à la livraison.`
     ));

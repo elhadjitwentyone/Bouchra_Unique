@@ -1,19 +1,17 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import OrderForm from "@/components/OrderForm";
-import { getProduct, getProducts, fcfa } from "@/lib/content";
+import { getProduct, getSiteConfig, fcfa } from "@/lib/content";
 
-export function generateStaticParams() {
-  return getProducts().map((p) => ({ slug: p.slug }));
-}
+export const dynamic = "force-dynamic";
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const p = getProduct(params.slug);
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const p = await getProduct(params.slug);
   return { title: p ? p.name : "Produit" };
 }
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
-  const p = getProduct(params.slug);
+export default async function ProductPage({ params }: { params: { slug: string } }) {
+  const [p, SITE] = await Promise.all([getProduct(params.slug), getSiteConfig()]);
   if (!p) notFound();
 
   return (
@@ -32,7 +30,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
         {p.customizable && <p className="mt-3 text-sm font-semibold text-navy">✓ Personnalisation gratuite disponible</p>}
         {!p.inStock && <p className="mt-3 text-sm font-semibold text-orange">Actuellement en rupture de stock</p>}
         <div className="mt-8">
-          <OrderForm product={p.name} customizable={p.customizable} />
+          <OrderForm product={p.name} customizable={p.customizable} whatsapp={SITE.whatsapp} siteName={SITE.name} />
         </div>
       </div>
     </div>

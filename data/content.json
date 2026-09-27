@@ -12,24 +12,66 @@
   },
   "home": {
     "steps": [
-      ["1. Choisissez", "Parcourez les gammes : encensoirs, diffuseurs, tableaux, luminaires."],
-      ["2. Personnalisez", "Ajoutez un prénom ou un message gravé en doré, gratuitement."],
-      ["3. Commandez", "Validez en 1 minute, confirmez sur WhatsApp."],
-      ["4. Recevez", "Livraison à Dakar, paiement à la livraison."]
+      [
+        "1. Choisissez",
+        "Parcourez les gammes : encensoirs, diffuseurs, tableaux, luminaires."
+      ],
+      [
+        "2. Personnalisez",
+        "Ajoutez un prénom ou un message gravé en doré, gratuitement."
+      ],
+      [
+        "3. Commandez",
+        "Validez en 1 minute, confirmez sur WhatsApp."
+      ],
+      [
+        "4. Recevez",
+        "Livraison à Dakar, paiement à la livraison."
+      ]
     ],
     "why": [
-      ["Personnalisation gratuite", "Prénom ou message sur votre encensoir."],
-      ["Showroom à Dakar", "Venez voir et sentir les produits à Liberté 6."],
-      ["Sélection soignée", "Des articles choisis avec soin et amour."],
-      ["Ambiance parfumée", "Encensoirs, diffuseurs, arômes et bougies."],
-      ["Cadeaux et événements", "Mariages, Tabaski, Korité, fête des mères."],
-      ["Réponse rapide", "Un seul WhatsApp pour tout."]
+      [
+        "Personnalisation gratuite",
+        "Prénom ou message sur votre encensoir."
+      ],
+      [
+        "Showroom à Dakar",
+        "Venez voir et sentir les produits à Liberté 6."
+      ],
+      [
+        "Sélection soignée",
+        "Des articles choisis avec soin et amour."
+      ],
+      [
+        "Ambiance parfumée",
+        "Encensoirs, diffuseurs, arômes et bougies."
+      ],
+      [
+        "Cadeaux et événements",
+        "Mariages, Tabaski, Korité, fête des mères."
+      ],
+      [
+        "Réponse rapide",
+        "Un seul WhatsApp pour tout."
+      ]
     ],
     "faq": [
-      ["Livrez-vous partout à Dakar ?", "Oui, sur demande. Précisez votre quartier à la commande."],
-      ["Comment payer ?", "Paiement à la livraison. Wave et Orange Money pourront s'ajouter."],
-      ["La personnalisation est-elle payante ?", "Non, elle est gratuite sur les produits marqués « Personnalisable »."],
-      ["Puis-je voir les produits ?", "Oui, au showroom : Liberté 6, Dakar."]
+      [
+        "Livrez-vous partout à Dakar ?",
+        "Oui, sur demande. Précisez votre quartier à la commande."
+      ],
+      [
+        "Comment payer ?",
+        "Paiement à la livraison. Wave et Orange Money pourront s'ajouter."
+      ],
+      [
+        "La personnalisation est-elle payante ?",
+        "Non, elle est gratuite sur les produits marqués « Personnalisable »."
+      ],
+      [
+        "Puis-je voir les produits ?",
+        "Oui, au showroom : Liberté 6, Dakar."
+      ]
     ]
   },
   "personnalisation": {
@@ -48,15 +90,125 @@
   },
   "reviews": [],
   "products": [
-    { "slug": "encensoir-nacre-dor", "name": "Encensoir Nacre d'Or", "category": "Encensoirs", "collection": "Nacre d'Or", "price": null, "image": null, "description": "Encensoir en céramique blanche et dorée sur pied doré.", "customizable": true, "inStock": true, "published": true },
-    { "slug": "encensoir-noir-argent", "name": "Encensoir Noir et argent", "category": "Encensoirs", "collection": "Noir et argent", "price": null, "image": null, "description": "Encensoir noir mat, finitions argentées.", "customizable": true, "inStock": true, "published": true },
-    { "slug": "encensoir-orange-noir", "name": "Encensoir Orange noir", "category": "Encensoirs", "collection": "Orange noir", "price": null, "image": null, "description": "Encensoir orange sur pied filaire doré.", "customizable": true, "inStock": true, "published": true },
-    { "slug": "encensoir-coeur-personnalise", "name": "Encensoir cœur personnalisé", "category": "Encensoirs", "collection": "Personnalisation", "price": null, "image": null, "description": "Encensoir blanc en forme de cœur avec prénom gravé en doré.", "customizable": true, "inStock": true, "published": true },
-    { "slug": "diffuseur-arome-ambre", "name": "Diffuseur d'arôme Ambre", "category": "Diffuseurs", "collection": "Ambre", "price": null, "image": null, "description": "Diffuseur d'arôme en céramique, senteur ambre.", "customizable": false, "inStock": true, "published": true },
-    { "slug": "bougie-parfumee-vanille", "name": "Bougie parfumée Vanille", "category": "Bougies", "collection": "Vanille", "price": null, "image": null, "description": "Bougie artisanale parfumée à la vanille.", "customizable": false, "inStock": true, "published": true },
-    { "slug": "tableau-calligraphie-doree", "name": "Tableau calligraphie dorée", "category": "Tableaux", "collection": "Calligraphie", "price": null, "image": null, "description": "Tableau de calligraphie islamique doré.", "customizable": false, "inStock": true, "published": true },
-    { "slug": "luminaire-suspendu-dore", "name": "Luminaire suspendu doré", "category": "Luminaires", "collection": "Doré", "price": null, "image": null, "description": "Luminaire suspendu aux finitions dorées.", "customizable": false, "inStock": true, "published": true },
-    { "slug": "porte-verres-suspendu", "name": "Porte-verres suspendu", "category": "Accessoires", "collection": "Accessoires", "price": null, "image": null, "description": "Porte-verres suspendu, style doré.", "customizable": false, "inStock": true, "published": true },
-    { "slug": "pot-de-fleur-dore", "name": "Pot de fleur doré", "category": "Accessoires", "collection": "Accessoires", "price": 30000, "image": null, "description": "Pot de fleur doré, pièce décorative.", "customizable": false, "inStock": true, "published": true }
+    {
+      "slug": "encensoir-nacre-dor",
+      "name": "Encensoir Nacre d'Or",
+      "category": "Encensoirs",
+      "collection": "Nacre d'Or",
+      "price": null,
+      "image": "https://images.pexels.com/photos/25525915/pexels-photo-25525915.jpeg?auto=compress&w=800",
+      "description": "Encensoir en céramique blanche et dorée sur pied doré.",
+      "customizable": true,
+      "inStock": true,
+      "published": true
+    },
+    {
+      "slug": "encensoir-noir-argent",
+      "name": "Encensoir Noir et argent",
+      "category": "Encensoirs",
+      "collection": "Noir et argent",
+      "price": null,
+      "image": "https://images.pexels.com/photos/6954562/pexels-photo-6954562.jpeg?auto=compress&w=800",
+      "description": "Encensoir noir mat, finitions argentées.",
+      "customizable": true,
+      "inStock": true,
+      "published": true
+    },
+    {
+      "slug": "encensoir-orange-noir",
+      "name": "Encensoir Orange noir",
+      "category": "Encensoirs",
+      "collection": "Orange noir",
+      "price": null,
+      "image": "https://images.pexels.com/photos/7947725/pexels-photo-7947725.jpeg?auto=compress&w=800",
+      "description": "Encensoir orange sur pied filaire doré.",
+      "customizable": true,
+      "inStock": true,
+      "published": true
+    },
+    {
+      "slug": "encensoir-coeur-personnalise",
+      "name": "Encensoir cœur personnalisé",
+      "category": "Encensoirs",
+      "collection": "Personnalisation",
+      "price": null,
+      "image": "https://images.pexels.com/photos/7750087/pexels-photo-7750087.jpeg?auto=compress&w=800",
+      "description": "Encensoir blanc en forme de cœur avec prénom gravé en doré.",
+      "customizable": true,
+      "inStock": true,
+      "published": true
+    },
+    {
+      "slug": "diffuseur-arome-ambre",
+      "name": "Diffuseur d'arôme Ambre",
+      "category": "Diffuseurs",
+      "collection": "Ambre",
+      "price": null,
+      "image": "https://images.pexels.com/photos/2235323/pexels-photo-2235323.png?auto=compress&w=800",
+      "description": "Diffuseur d'arôme en céramique, senteur ambre.",
+      "customizable": false,
+      "inStock": true,
+      "published": true
+    },
+    {
+      "slug": "bougie-parfumee-vanille",
+      "name": "Bougie parfumée Vanille",
+      "category": "Bougies",
+      "collection": "Vanille",
+      "price": null,
+      "image": "https://images.pexels.com/photos/35764556/pexels-photo-35764556.jpeg?auto=compress&w=800",
+      "description": "Bougie artisanale parfumée à la vanille.",
+      "customizable": false,
+      "inStock": true,
+      "published": true
+    },
+    {
+      "slug": "tableau-calligraphie-doree",
+      "name": "Tableau calligraphie dorée",
+      "category": "Tableaux",
+      "collection": "Calligraphie",
+      "price": null,
+      "image": "https://cdn.pixabay.com/photo/2016/01/16/11/11/islamic-1143175_1280.png",
+      "description": "Tableau de calligraphie islamique doré.",
+      "customizable": false,
+      "inStock": true,
+      "published": true
+    },
+    {
+      "slug": "luminaire-suspendu-dore",
+      "name": "Luminaire suspendu doré",
+      "category": "Luminaires",
+      "collection": "Doré",
+      "price": null,
+      "image": "https://images.pexels.com/photos/1178990/pexels-photo-1178990.jpeg?auto=compress&w=800",
+      "description": "Luminaire suspendu aux finitions dorées.",
+      "customizable": false,
+      "inStock": true,
+      "published": true
+    },
+    {
+      "slug": "porte-verres-suspendu",
+      "name": "Porte-verres suspendu",
+      "category": "Accessoires",
+      "collection": "Accessoires",
+      "price": null,
+      "image": "https://images.pexels.com/photos/1080383/pexels-photo-1080383.jpeg?auto=compress&w=800",
+      "description": "Porte-verres suspendu, style doré.",
+      "customizable": false,
+      "inStock": true,
+      "published": true
+    },
+    {
+      "slug": "pot-de-fleur-dore",
+      "name": "Pot de fleur doré",
+      "category": "Accessoires",
+      "collection": "Accessoires",
+      "price": 30000,
+      "image": "https://cdn.pixabay.com/photo/2020/08/23/06/10/ceramic-5510008_1280.jpg",
+      "description": "Pot de fleur doré, pièce décorative.",
+      "customizable": false,
+      "inStock": true,
+      "published": true
+    }
   ]
 }
